@@ -1,0 +1,106 @@
+<nav class="navbar fixed-top navbar-light">
+    <a class="navbar-brand" id="off-user-guide" href="#">User Guide</a>
+    <a class="navbar-brand" id="savetoDB" href="#">Save</a>
+    <a class="navbar-brand" id="logout" id="logout" href="/logout">Logout</a>
+</nav>
+
+
+<main id="mainBody">
+
+	<!-- Container start-->
+	<div class="grid-container mainContainer small-centered">
+
+		<!-- 1st row -->
+
+
+		<div class="cell small-6 medium-3 large-2 parent">
+
+			<!-- HP Div -->
+			<div class="cell small-6 large-3 large-pull-6 sideStat inline-block-child" id="hitPointsID">
+				<img src="assets/img/front-end-images/hpfull.png" class="topStatImgSideOff" />
+				<div class="topStatText">
+					<a id="hitplus" href="#" class="topStatTextNum">+</a>
+					<h4 id="health" class="topStatTextNum"></h4>
+					<a id="hitminus" href="#" class="topStatTextNum">-</a>
+					<h4>HP</h4>
+				</div>
+			</div>
+
+			<!-- Strength or Intelligence -->
+			<div class="cell small-12 sideStat inline-block-child" id="strIntDiv">
+				<img src="assets/img/front-end-images/medieval-frame.png" class="topStatImgSideOff" />
+				<div class="sideStatText">
+					<h2 class="sideStatNumber" id="sideStatNumber7"></h2>
+					<h3 id="strInt"></h3>
+				</div>
+			</div>
+
+			<!-- Dexterity or Wisdom -->
+			<div class="small-12 cell sideStat inline-block-child" id="dexWisDiv">
+				<img src="assets/img/front-end-images/medieval-frame.png" class="topStatImgSideOff" />
+				<div class="sideStatText">
+					<h2 class="sideStatNumber" id="sideStatNumber8"></h2>
+					<h3 id="dexWis"></h3>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+		<!-- Character Image, Proficient Skills and Spells and Equipment Column-->
+		<div class="containerCenter cell medium-6 medium-pull-3 large-8 large-pull-2">
+			<div class="grid-x">
+
+				<div class="containerCenterRight cell large-6 spellEquDiv">
+					<img src="assets/img/front-end-images/tornpaperbackground.png" id="spellEquImg"
+						class="spellEquImage" />
+					<div class="spellEquText">
+						<p>Spells and Equipment:
+							<a class="fa fa-question-circle" href="#" id="equipment-guide" data-reveal-id="equip-modal">
+							</a>
+						</p>
+						<p id="equipment-1"></p>
+						<p id="equipment-2"></p>
+						<p id="equipment-3"></p>
+						<p id="equipment-4"></p>
+						<p id="equipment-5"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- 4th row -->
+		<div class="diceRow forthRow">
+
+			<!-- Dice roller -->
+			<div class="containerDice grid-container full">
+				<div class="grid-x diceGrid">
+					<div class="medium-6 small-12 diceTray1">
+						<i id="dice4" class="df-d4-4"></i>
+						<i id="dice6" class="df-d6-6"></i>
+						<i id="dice8" class="df-d8-8"></i>
+					</div>
+					<div class="medium-6 small-12 diceTray2">
+						<i id="dice10" class="df-d10-10"></i>
+						<i id="dice12" class="df-d12-12"></i>
+						<i id="dice20" class="df-d20-20"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar fixed-bottom navbar-light">
+			<a class="navbar-brand" href="/">Home</a>
+			<a class="navbar-brand" href="/defense">Defense</a>
+			<a class="navbar-brand" href="/utility">Utility</a>
+			<a class="navbar-brand" href="/roleplay">Role Play</a>
+		</nav>
+
+	</div>
+
+
+</main>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>DnD Buddy</title>
+
+	<!-- CSS reset -->
+	<link rel="stylesheet" type="text/CSS" href="assets/css/reset.css" />
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;800&display=swap" rel="stylesheet">
+
+	<!--Help Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+	<!-- Foundation JS -->
+	<script src="assets/frontEndjs/foundationjs/jquery.js"></script>
+	<script src="assets/frontEndjs/foundationjs/what-input.js"></script>
+	<script src="assets/frontEndjs/foundationjs/foundation.min.js"></script>
+
+	<!-- Foundation CSS -->
+	<link rel="stylesheet" href="assets/css/foundation-float.css" />
+	<link rel="stylesheet" href="assets/css/foundation-float.min.css" />
+	<link rel="stylesheet" href="assets/css/foundation.css" />
+	<link rel="stylesheet" href="assets/css/foundation.min.css" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+	<!-- Dice Icon CSS -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/fponticelli/dicefont/fc6b8c47/dist/dicefont/dicefont.css" />
+
+	<!-- Our CSS -->
+	<link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+	{{!-- <nav class="navbar fixed-top navbar-light">
+		<a class="navbar-brand" href="#">User Guide</a>
+		<a class="navbar-brand" href="/indexmodal">Character Setup</a>
+		<a class="navbar-brand" id="saveBtn" href="#">Save</a>
+		<a class="navbar-brand" href="/logout">Logout</a>
+	</nav> --}}
+
+	{{{ body }}}
+
+	<nav class="navbar fixed-bottom navbar-light computer">
+		<a class="navbar-brand" href="offense.html">Offense</a>
+		<a class="navbar-brand" href="offense.html">Defense</a>
+		<a class="navbar-brand" href="utility.html">Utility</a>
+		<a class="navbar-brand" href="roleplay.html">Role Play</a>
+	</nav>
+</body>
+<!-- Foundation JS
+		<script src="assets/frontEndjs/foundation js/vendor/jquery.js"></script>
+		<script src="assets/frontEndjs/foundation js/vendor/what-input.js"></script>
+		<script src="assets/frontEndjs/foundation js/vendor/foundation.min.js"></script> -->
+<script>
+	$(document).foundation();
+</script>
+
+<!-- D&D Buddy JS -->
+<script src="assets/frontEndjs/globalVar.js"></script>
+<script src="assets/frontEndjs/loaddatabase.js"></script>
+<script src="assets/frontEndjs/openingmodal.js"></script>
+<script src="assets/frontEndjs/randomcharacter.js"></script>
+<script src="assets/frontEndjs/characterimage.js"></script>
+<script src="assets/frontEndjs/stats.js"></script>
+<script src="assets/frontEndjs/statmodalguides.js"></script>
+<script src="assets/frontEndjs/dice.js"></script>
+<script src="assets/frontEndjs/namebanner.js"></script>
+<script src="assets/frontEndjs/userguide.js"></script>
+<script src="assets/frontEndjs/skillsguidemodal.js"></script>
+<script src="assets/frontEndjs/spellsandequipmodal.js"></script>
+<script src="assets/frontEndjs/weaponspells.js"></script>
+<script src="assets/frontEndjs/saveJS.js"></script>
+
+
+</html>

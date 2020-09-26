@@ -1,0 +1,104 @@
+/* This CSS file serve register and login page only */
+
+/* Part 1 - main container style */
+/* Part 1.1 - set the size fot the main container
+Note: Please refer to @ media query for different min-width for the main container (Part 1.1.a)*/
+* {
+	box-sizing: border-box;
+}
+
+/* Part 1.1.2 - set the style for the scroll bar */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+/* end of Part 1.1 */
+
+/* Part 1.2 - main body style */
+/* set the background image and font style */
+body {
+	background-image: url(../img/front-end-images/northern_chimera-rotated.png);
+	font-family: 'Grenze Gotisch', cursive;
+}
+/* set the font size for all title */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Grenze Gotisch', cursive;
+}
+/* set the font size for h3 */
+h3 {
+	font-size: 28px;
+}
+/* end of part 1.3 */
+/* end of Part 1 */
+
+/* Part 2 - sign up form style setting */
+.topTitle {
+	padding-left: 50px;
+	font-size: 3.5rem;
+}
+
+.register {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	font-size: 1.8rem;
+}
+
+.login {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	font-size: 1.8rem;
+}
+
+.btn {
+	background-color: rgb(185, 185, 185);
+	color: rgb(120, 120, 120);
+}
+
+.btn:hover {
+	background-color: rgb(120, 120, 120);
+	color: black;
+}
+
+.footerRoute {
+	padding-left: 50px;
+	font-size: 1.5rem;
+}
+/* For medium screen (e.g. tablets) */
+/* @media screen and (min-width: 640px) and (max-width: 768px) { */
+/* Part 1.1.a - change the min-width of the main container */
+/* .mainContainer {
+		min-width: 380px;
+		max-width: 100%;
+	}
+} */
+
+/* For small screens (e.g. phone) */
+/* @media only screen and (max-width: 640px) { */
+/* Part 1.1.a - change the min-width of the main container */
+/* .mainContainer {
+		min-width: 0px;
+		max-width: 100%;
+	}
+} */

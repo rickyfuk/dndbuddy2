@@ -1,0 +1,102 @@
+<nav class="navbar fixed-top navbar-light">
+    <a class="navbar-brand" id="def-user-guide" href="#">User Guide</a>
+    <a class="navbar-brand" id="savetoDB" href="#">Save</a>
+    <a class="navbar-brand" id="logout" href="/logout">Logout</a>
+</nav>
+
+
+<main id="mainBody">
+
+    <!-- Container start-->
+    <div class="grid-container mainContainer small-centered">
+
+        <!-- 1st row -->
+        <div class="grid-x topRow align-middle">
+
+            <!-- HP Div -->
+            <div class="cell small-6 large-3 large-pull-6 topStatAsideContainer" id="hitPointsID">
+                <img src="assets/img/front-end-images/hpfull.png" class="topStatImgSide" />
+                <div class="topStatText">
+                    <a id="hitplus" href="#" class="topStatTextNum">+</a>
+                    <h4 id="health" class="topStatTextNum"></h4>
+                    <a id="hitminus" href="#" class="topStatTextNum">-</a>
+                    <h3>HP</h3>
+                </div>
+            </div>
+
+            <!-- AC Div -->
+            <div class="cell small-6 large-3 topStatAsideContainer" id="hitPointsID">
+                <img src="assets/img/front-end-images/acfull.png" class="topStatImgSide" />
+                <div class="topStatText">
+                    <h4 id="armor" class="topStatTextNum"></h4>
+                    <h3>AC</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 2nd row -->
+        <div class="grid-x thirdRow">
+
+            <!-- Left side stats -->
+            <div class="cell small-6 medium-3 large-2 statDiv">
+
+                <!-- Dexterity -->
+                <div class="small-12 cell sideStat" id="dexDiv">
+                    <img src="assets/img/front-end-images/medieval-frame.png" class="sideStatImg" />
+                    <div class="sideStatText">
+                        <h2 class="sideStatNumber" id="sideStatNumber2"></h2>
+                        <h3>Dexterity</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right side stats -->
+            <div class="cell small-6 medium-3 medium-push-6 large-2 large-push-8 statDiv">
+
+                <!-- Constitution -->
+                <div class="small-12 cell sideStat" id="conDiv">
+                    <img src="assets/img/front-end-images/medieval-frame.png" class="sideStatImg" />
+                    <div class="sideStatText">
+                        <h2 class="sideStatNumber" id="sideStatNumber3"></h2>
+                        <h3>Constitution</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End of Character Image, Proficient Skills and Spells and Equipment Column -->
+
+    </div>
+
+    <!-- 3rd row -->
+    <div class="grid-x diceRow forthRow">
+
+        <!-- Dice roller -->
+        <div class="containerDice grid-container full">
+            <div class="grid-x diceGrid">
+                <div class="medium-6 small-12 diceTray1">
+                    <i id="dice4" class="df-d4-4"></i>
+                    <i id="dice6" class="df-d6-6"></i>
+                    <i id="dice8" class="df-d8-8"></i>
+                </div>
+                <div class="medium-6 small-12 diceTray2">
+                    <i id="dice10" class="df-d10-10"></i>
+                    <i id="dice12" class="df-d12-12"></i>
+                    <i id="dice20" class="df-d20-20"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="navbar fixed-bottom navbar-light">
+        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/offense">Offense</a>
+        <a class="navbar-brand" href="/utility">Utility</a>
+        <a class="navbar-brand" href="/roleplay">Role Play</a>
+    </nav>
+
+</main>

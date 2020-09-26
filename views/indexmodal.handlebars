@@ -1,0 +1,278 @@
+<main id="mainBody">
+	<!-- This is the first modal -->
+	<div class="reveal revealStyle" id="Modal1" data-reveal>
+		<h1>Welcome!</h1>
+		<p class="lead">Do you need guidance in setting up your character?</p>
+		<button id="toModal2" class="button revealButton">
+			Yes
+		</button>
+		<button id="closeM1" class="button revealButton">
+			No
+		</button>
+		<button id="toRandom" class="button revealButton">
+			No, but please randomize a character for me
+		</button>
+		<button class="close-button" data-close aria-label="Close reveal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+
+	<nav class="navbar fixed-top navbar-light">
+		<a class="navbar-brand" id="index-user-guide" href="#" data-reveal-id="ug-modal">User Guide</a>
+		<a class="navbar-brand mobile" href="/indexmodal">Character Setup</a>
+		<a id="savetoDB" class="navbar-brand" href="#">Save</a>
+		<a id="logout" class="navbar-brand">Logout</a>
+
+	</nav>
+
+	<!-- Container start-->
+	<div class="grid-container mainContainer small-centered">
+
+		<!-- 1st row -->
+		<div class="grid-x topRow align-middle">
+
+			<!-- Name/Class Div -->
+			<div class="cell small-12 large-6 topStat large-push-3">
+				<img src="assets/img/front-end-images/burnbanner.png" id="topBanner" />
+				<div class="grid-x topBannerText">
+					<div class="cell">
+						<h1 contenteditable="false" id="characterName">Humberferg</h1>
+						<div class="grid-namebanner">
+							<ul id="addDrop" class="dropdown menu">
+								<li id="removeGender">
+									<a id="gender" href="#"></a>
+									<ul id="genderUL" class="menu"></ul>
+								</li>
+								<li id="removeRace">
+									<a id="race" href="#"></a>
+									<ul id="raceUL" class="menu"></ul>
+								</li>
+								<li id="removeClass">
+									<a id="class" href="#"></a>
+									<ul id="classUL" class="menu"></ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- HP Div -->
+			<div class="cell small-6 large-3 large-pull-6 topStatAsideContainer" id="hitPointsID">
+				<img src="assets/img/front-end-images/hpfull.png" class="topStatImgSide" />
+				<div class="topStatText">
+					<a id="hitplus" href="#" class="topStatTextNum">+</a>
+					<h4 id="health" class="topStatTextNum"></h4>
+					<a id="hitminus" href="#" class="topStatTextNum">-</a>
+					<h4>Hitpoints</h4>
+				</div>
+			</div>
+
+			<!-- AC Div -->
+			<div class="cell small-6 large-3 topStatAsideContainer" id="hitPointsID">
+				<img src="assets/img/front-end-images/acfull.png" class="topStatImgSide" />
+				<div class="topStatText">
+					<h4 id="armor" class="topStatTextNum"></h4>
+					<h4>Armor Class</h4>
+				</div>
+			</div>
+		</div>
+		<!-- end of 1st row -->
+
+		<!-- 2nd row -->
+		<div class="grid-x diceRow secondRow mobile">
+
+			<!-- Dice roller -->
+			<div class="containerDice grid-container full">
+				<div class="grid-x diceGrid">
+					<div class="medium-6 small-12 diceTray1">
+						<i id="diceup4" class="df-d4-4"></i>
+						<i id="diceup6" class="df-d6-6"></i>
+						<i id="diceup8" class="df-d8-8"></i>
+					</div>
+					<div class="medium-6 small-12 diceTray2">
+						<i id="diceup10" class="df-d10-10"></i>
+						<i id="diceup12" class="df-d12-12"></i>
+						<i id="diceup20" class="df-d20-20"></i>
+					</div>
+				</div>
+			</div>
+			<!-- End Diceroller container -->
+		</div>
+		<!-- end of second row -->
+
+		<!-- 3rd row -->
+		<div class="grid-x thirdRow">
+
+			<!-- Left side stats -->
+			<div class="cell small-6 medium-3 large-2 statDiv mobile">
+
+				<!-- Strength -->
+				<div class="cell small-12 sideStat" id="strDiv">
+					<div class="helpButton">
+						<a class="fa fa-question-circle" href="#" id="str-guide" data-reveal-id="strength-modal"></a>
+					</div>
+					<img src="assets/img/front-end-images/medieval-frame.png" class="sideStatImg" />
+					<div class="sideStatText">
+						<h2 class="sideStatNumber" id="sideStatNumber1"></h2>
+						<h3>Strength</h3>
+					</div>
+				</div>
+
+				<!-- Dexterity -->
+				<div class="small-12 cell sideStat" id="dexDiv">
+					<div class="helpButton">
+						<a class="fa fa-question-circle" href="#" id="dex-guide" data-reveal-id="dexterity-modal"></a>
+					</div>
+					<img src="assets/img/front-end-images/medieval-frame.png" class="sideStatImg" />
+					<div class="sideStatText">
+						<h2 class="sideStatNumber" id="sideStatNumber2"></h2>
+						<h3>Dexterity</h3>
+					</div>
+				</div>
+
+				<!-- Constitution -->
+				<div class="small-12 cell sideStat" id="conDiv">
+					<div class="helpButton">
+						<a class="fa fa-question-circle" href="#" id="con-guide"
+							data-reveal-id="constitution-modal"></a>
+					</div>
+					<img src="assets/img/front-end-images/medieval-frame.png" class="sideStatImg" />
+					<div class="sideStatText">
+						<h2 class="sideStatNumber" id="sideStatNumber3"></h2>
+						<h3>Constitution</h3>
+					</div>
+				</div>
+
+			</div>
+			<!-- end of left side stats -->
+
+			<!-- Right side stats -->
+			<div class="cell small-6 medium-3 medium-push-6 large-2 large-push-8 statDiv mobile">
+
+				<!-- Intelligence -->
+				<div class="cell small-12 sideStat" id="intDiv">
+					<div class="helpButton">
+						<a class="fa fa-question-circle" href="#" id="int-guide"
+							data-reveal-id="intelligence-modal"></a>
+					</div>
+					<img src="assets/img/front-end-images/medieval-frame.png" class="sideStatImg" />
+					<div class="sideStatText">
+						<h3 class="sideStatNumber" id="sideStatNumber4"></h3>
+						<h3>Intelligence</h3>
+					</div>
+				</div>
+
+				<!-- Wisdom -->
+				<div class="small-12 cell sideStat" id="wisDiv">
+					<div class="helpButton">
+						<a class="fa fa-question-circle" href="#" id="wis-guide" data-reveal-id="wisdom-modal"></a>
+					</div>
+					<img src="assets/img/front-end-images/medieval-frame.png" class="sideStatImg" />
+					<div class="sideStatText">
+						<h3 class="sideStatNumber" id="sideStatNumber5"></h3>
+						<h3>Wisdom</h3>
+					</div>
+				</div>
+
+				<!-- Charisma -->
+				<div class="small-12 cell sideStat" id="chaDiv">
+					<div class="helpButton">
+						<a class="fa fa-question-circle" href="#" id="cha-guide" data-reveal-id="charisma-modal"></a>
+					</div>
+					<img src="assets/img/front-end-images/medieval-frame.png" class="sideStatImg" />
+					<div class="sideStatText">
+						<h3 class="sideStatNumber" id="sideStatNumber6"></h3>
+						<h3>Charisma</h3>
+					</div>
+				</div>
+
+			</div>
+			<!-- end of right side stats -->
+
+
+			<!-- Character Image, Proficient Skills and Spells and Equipment Column-->
+			<div class="containerCenter cell medium-6 medium-pull-3 large-8 large-pull-2">
+				<div class="grid-x">
+					<!-- left side of the center container -->
+					<div class="containerCenterLeft cell large-6">
+						<div class="cell vidImageDiv">
+							<img src="assets/img/front-end-images/tornpaperbackground.png" id="centerVidImg"
+								class="vidImage" />
+						</div>
+						<div class="cell skillDiv mobile">
+							<img src="assets/img/front-end-images/tornpaperbackground.png" id="skillImg"
+								class="skillImage" />
+							<div class="skillText">
+								<p>Proficient Skills
+									<a class="fa fa-question-circle" href="#" id="skills-guide"
+										data-reveal-id="skills-modal"></a>
+								</p>
+								<p id="skill-1"></p>
+								<p id="skill-2"></p>
+								<p id="skill-3"></p>
+								<p id="skill-4"></p>
+							</div>
+						</div>
+					</div>
+					<!-- right side of the center container -->
+					<div class="containerCenterRight cell large-6 spellEquDiv mobile">
+						<img src="assets/img/front-end-images/tornpaperbackground.png" id="spellEquImg"
+							class="spellEquImage" />
+						<div class="spellEquText">
+							<p>Spells and Equipment
+								<a class="fa fa-question-circle" href="#" id="equipment-guide"
+									data-reveal-id="equip-modal"></a>
+							</p>
+							<p id="equipment-1"></p>
+							<p id="equipment-2"></p>
+							<p id="equipment-3"></p>
+							<p id="equipment-4"></p>
+							<p id="equipment-5"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Character Image, Proficient Skills and Spells and Equipment Column -->
+
+	</div>
+	<!-- End of third row -->
+
+	<!-- 4th row -->
+	<nav class="navbar fixed-bottom navbar-light mobile">
+		<div class="grid-x diceRow forthRow">
+
+			<!-- Dice roller -->
+			<div class="containerDice grid-container full">
+				<div class="grid-x diceGrid">
+					<div class="medium-6 small-12 diceTray1">
+						<i id="dice4" class="df-d4-4"></i>
+						<i id="dice6" class="df-d6-6"></i>
+						<i id="dice8" class="df-d8-8"></i>
+					</div>
+					<div class="medium-6 small-12 diceTray2">
+						<i id="dice10" class="df-d10-10"></i>
+						<i id="dice12" class="df-d12-12"></i>
+						<i id="dice20" class="df-d20-20"></i>
+					</div>
+				</div>
+			</div>
+			<!-- End Diceroller container -->
+
+		</div>
+
+	</nav>
+	<!-- end of forth row -->
+
+	<nav class="navbar fixed-bottom navbar-light computer">
+		<a class="navbar-brand" href="/offense">Offense</a>
+		<a class="navbar-brand" href="/defense">Defense</a>
+		<a class="navbar-brand" href="/utility">Utility</a>
+		<a class="navbar-brand" href="/roleplay">Role Play</a>
+	</nav>
+
+	{{!-- </div> --}}
+	<!-- end of container -->
+
+</main>

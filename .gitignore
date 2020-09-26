@@ -1,11 +1,3 @@
 node_modules/
 
-to do list: 
-1. add the function to save the data from local stroage to database
-2. build the save button (working by ALex)
-# 3. handlebars file - remove the repeative nav bar
-4. build the route for the handlebars of the mobile html page
-5. change the mobile html href to hyperlink
-6. prepare the presentation
-7. readme
-8. push the app to heroku with travis setup
+.env

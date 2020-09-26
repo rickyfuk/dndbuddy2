@@ -43,6 +43,7 @@ app.use(apiRoute);
 app.use(htmlRoute);
 
 // sync the sequelize model
+// sync the sequelize model
 db.sequelize.sync({ force: true }).then(function () {
 	app.listen(PORT, function () {
 		console.log('App listening on PORT ' + PORT);
